@@ -27,6 +27,26 @@ public Recipe getId() {
 	// TODO Auto-generated method stub
 	return null;
 }
+public String getPassword() {
+	// TODO Auto-generated method stub
+	return null;
+}
+public String getFullName() {
+	// TODO Auto-generated method stub
+	return null;
+}
+public void setFullName(String fullName2) {
+	// TODO Auto-generated method stub
+	
+}
+public void setEmail(String email2) {
+	// TODO Auto-generated method stub
+	
+}
+public void setPassword(String encode) {
+	// TODO Auto-generated method stub
+	
+}
 
 
 }
