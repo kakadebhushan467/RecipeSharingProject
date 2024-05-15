@@ -6,6 +6,6 @@ public interface UserService {
 	
 	public User findUserById(Long userId)throws Exception;
 
-	public User findUserById(Long userId);
+	public User findUserByJwt(String jwt)throws Exception;
 
 }

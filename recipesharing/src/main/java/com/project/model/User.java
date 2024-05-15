@@ -1,5 +1,8 @@
 package com.project.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,38 +19,24 @@ public class User {
 @GeneratedValue(strategy = GenerationType.AUTO)
 
  private Long id;
+
+@JsonProperty(access=JsonProperty.Access.WRITE_ONLY)
  private String email;
  private String password;
  private String fullName;
-public String getEmail() {
-	// TODO Auto-generated method stub
-	return null;
-   }
-public Recipe getId() {
-	// TODO Auto-generated method stub
-	return null;
+ 
+public String getFullName() {
+	return fullName;
+}
+public void setFullName(String fullName) {
+	this.fullName = fullName;
 }
 public String getPassword() {
-	// TODO Auto-generated method stub
-	return null;
+	return password;
 }
-public String getFullName() {
-	// TODO Auto-generated method stub
-	return null;
+public void setPassword(String password) {
+	this.password = password;
 }
-public void setFullName(String fullName2) {
-	// TODO Auto-generated method stub
-	
-}
-public void setEmail(String email2) {
-	// TODO Auto-generated method stub
-	
-}
-public void setPassword(String encode) {
-	// TODO Auto-generated method stub
-	
-}
-
 
 }
  
